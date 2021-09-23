@@ -30,7 +30,26 @@ class Pelicula{
     this.morgan.arma.recargar()
     this.narrador.hablar('Morgan recarga el arma')
     this.morgan.arma.disparar()
-    this.narrador.hablar('Pero María consiguió refugiarse del tiro y ahora se escabulle')
+    this.narrador.hablar('Pero María consiguió refugiarse del disparo')
+    this.narrador.hablar('María se refugia tras unas cajas y ecuentra algo...')
+    this.maria.arma.disparar()
+    this.morgan.arma.disparar()
+    this.morgan.hablar('¡Deja de esconderte maldita sabandija! No me gustan los forasteros como vosotros, ¿sabes?')
+    this.narrador.hablar('De repente se origina un tira y afloja entre armas de fuego, María dispara pero..')
+    this.maria.hablar('¡Maldito insensato, pagarás por lo que has hecho!... Espera.. ¿¡Qué!?')
+    this.maria.arma.atascar()
+    this.narrador.hablar('María se encuentra en graves problemas... el arma se le ha atascado')
+    this.morgan.hablar('¡No tienes escapataria, Ríndete...!')
+    this.narrador.hablar('Morgan se acerca confiado cuando de repente...')
+    this.maria.hablar('¡Toma esto....!')
+    this.maria.arma.golpear()
+    this.morgan.hablar('Agggghh.....')
+    this.narrador.hablar('María golpea con todas sus fuerzas el arma contra el rostro de Morgan')
+    this.narrador.hablar('Morgan cae al suelo')
+    this.maria.hablar('¡Más te vale no levantarte, Escoria...!')
+    this.narrador.hablar('María aprovecha la situación para cargar con el cuerpo de Paco y huir de la escena')
+    this.narrador.hablar('¿Continuará...?')
+
   }
 }
 
@@ -71,10 +90,16 @@ class PersonajeMalo extends Personaje{
 
 class Arma{
   disparar(){
-    document.write('<p>¡¡PUM!!</p>')
+    document.write('<p>¡¡PIUM!!</p>')
   }
   recargar(){
     document.write('<p> ¡CLACK CLACK!</p>')
+  }
+  atascar(){
+    document.write('<p>¡TIC..TIC</p>')
+  }
+  golpear(){
+    document.write('<p>¡¡CATAPUM!!</p>')
   }
 }
 
